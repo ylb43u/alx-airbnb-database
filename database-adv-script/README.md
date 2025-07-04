@@ -1,0 +1,1 @@
+# This script is for creating join queries
