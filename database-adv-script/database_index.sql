@@ -15,3 +15,4 @@ CREATE INDEX idx_review_rating ON Review(rating);
 
 
 EXPLAIN SELECT * FROM Booking WHERE user_id = 42;
+ANALYZE SELECT * FROM Booking WHERE user_id = 42;
