@@ -2,7 +2,7 @@ SELECT p.*
 FROM Property p
 JOIN Review r ON p.property_id = r.property_id
 GROUP BY p.property_id, p.name -- add all non-aggregated columns here
-HAVING AVG(r.rating) > 4;
+HAVING AVG(r.rating) > 4.0;
 
 
 SELECT u.*
