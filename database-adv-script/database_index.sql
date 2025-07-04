@@ -12,3 +12,6 @@ CREATE INDEX idx_property_property_id ON Property(property_id);
 
 -- Optional: Index on Review ratings for filtering
 CREATE INDEX idx_review_rating ON Review(rating);
+
+
+EXPLAIN SELECT * FROM Booking WHERE user_id = 42;
