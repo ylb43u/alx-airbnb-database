@@ -13,3 +13,9 @@ WHERE u.user_id IN (
     GROUP BY user_id
     HAVING COUNT(*) > 3
 );
+
+SELECT u.user_id, u.name, COUNT(b.booking_id) AS total_bookings
+FROM User u
+JOIN Booking b ON u.user_id = b.user_id
+GROUP BY u.user_id, u.name;
+
