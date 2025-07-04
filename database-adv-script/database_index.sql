@@ -1,6 +1,5 @@
 
-EXPLAIN SELECT * FROM Booking WHERE user_id = 42;
-ANALYZE SELECT * FROM Booking WHERE user_id = 42;
+
 
 -- Index on User table
 CREATE INDEX idx_user_user_id ON User(user_id);
@@ -17,5 +16,4 @@ CREATE INDEX idx_property_property_id ON Property(property_id);
 CREATE INDEX idx_review_rating ON Review(rating);
 
 
-EXPLAIN SELECT * FROM Booking WHERE user_id = 42;
-ANALYZE SELECT * FROM Booking WHERE user_id = 42;
+EXPLAIN ANALYZE SELECT * FROM Booking WHERE user_id = 42;
